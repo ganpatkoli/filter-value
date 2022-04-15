@@ -1,0 +1,26 @@
+const filterData=(e)=>{
+// setData(first)
+ var searchData =  serchfilter.filter((item)=>{
+  if(item.symbol.toLowerCase().toString().includes(e.toLowerCase().toString()) || item.order_status.toLowerCase().toString().includes(e.toLowerCase().toString())|| item.send_request.toLowerCase().toString().includes(e.toLowerCase().toString())|| item.order_id.toLowerCase().toString().includes(e.toLowerCase().toString()) || item.reject_reason.toLowerCase().toString().includes(e.toLowerCase().toString())){
+
+    return item 
+  }
+    })
+
+    setBrokerDetails(searchData);
+  }
+  
+  
+  
+  
+   <input type="text" placeholder="Filter Data" className="mt-5 mx-4" 
+               onChange={(e)=>filterData(e.target.value) 
+               
+               }
+               />
+          
+          
+          
+this will provide filteriswe value on change
+               
+ 
